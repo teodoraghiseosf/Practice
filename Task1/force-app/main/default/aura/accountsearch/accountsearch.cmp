@@ -1,0 +1,22 @@
+<aura:component controller ="AccountSearchController">
+    <aura:attribute name="accounts" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />        
+    <lightning:input type="text" name="searchKey" label="Search by Email" aura:id="searchKey" onchange="{!c.searchKeyChange}" placeholder="Search" />   
+    <button class="slds-button slds-button--brand" onclick="{!c.downlandCSV}">Download As CSV</button> 
+    <table class="slds-table slds-table_bordered slds-table_striped slds-table_cell-buffer slds-table_fixed-layout">  
+        <thead>
+            <tr>              
+                <th>Name</th>
+                <th>Email</th>                    
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.accounts}" var="account">
+                <tr>  
+                    <td>{!account.Name}</td>
+                    <td>{!account.Email__c}</td>                                
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table> 
+</aura:component>
