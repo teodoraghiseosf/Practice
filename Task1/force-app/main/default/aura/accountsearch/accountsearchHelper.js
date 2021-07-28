@@ -1,3 +1,15 @@
+/**
+ * File:        accountsearchHelper.js
+ * Project:     XXX
+ * Date:        July 28, 2021
+ * Created By:  Teodora Ghise
+ * **********************************************************
+ * Description: Account Search Helper js
+ * **********************************************************
+ * History:
+ * Date:                Modified By:             Description:
+ */
+
 ({      
     getAccountList: function(component) {
         var action = component.get('c.getAccounts');

@@ -1,3 +1,15 @@
+/**
+ * File:        AccountSearchController.cls
+ * Project:     XXX
+ * Date:        July 28, 2021
+ * Created By:  Teodora Ghise
+ * ***************************************************************
+ * Description: Account Search Controller class
+ * ***************************************************************
+ * History:
+ * Date:                Modified By:             Description:
+ */
+
 public class AccountSearchController {
     @AuraEnabled
     public static List <Account> getAccounts() {

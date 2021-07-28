@@ -1,3 +1,15 @@
+/**
+ * File:        accountsearch.cmp
+ * Project:     XXX
+ * Date:        July 28, 2021
+ * Created By:  Teodora Ghise
+ * **********************************************************
+ * Description: Account Search Component
+ * **********************************************************
+ * History:
+ * Date:                Modified By:             Description:
+ */
+
 <aura:component controller ="AccountSearchController">
     <aura:attribute name="accounts" type="List" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />        
