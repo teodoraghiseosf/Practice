@@ -22,6 +22,7 @@ public class AccountSearchController {
         for (Account account : [SELECT id,Name, Email__c FROM Account WHERE Email__c LIKE :email]){
             result.add(account);
         }
+        //////
         return result;
     }
 }
